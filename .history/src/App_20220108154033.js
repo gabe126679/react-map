@@ -2,7 +2,7 @@ import React from "react";
 import {
   GoogleMap,
   useLoadScript,
-  Marker,
+  // Marker,
   // InfoWindow,
 } from "@react-google-maps/api";
 
@@ -43,21 +43,14 @@ function App() {
         zoom={8}
         center={center}
         options={options}
-        onClick={(e) =>{
+        onClick={(event) =>{
           setMarkers(current => [...current, {
             lat: e.latLng.lat(),
             lng: e.latLng.lng(),
             time: new Date(),
           }])
         }}
-      >
-        {markers.map((marker) => (
-          <Marker 
-            key={marker.time.toISOString()}
-            position={{ lat: marker.lat, lng: marker.lng}}
-          />
-        ))}
-      </GoogleMap>
+      ></GoogleMap>
     </div>
   );
 }

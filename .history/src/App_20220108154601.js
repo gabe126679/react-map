@@ -43,7 +43,7 @@ function App() {
         zoom={8}
         center={center}
         options={options}
-        onClick={(e) =>{
+        onClick={(event) =>{
           setMarkers(current => [...current, {
             lat: e.latLng.lat(),
             lng: e.latLng.lng(),

@@ -43,7 +43,7 @@ function App() {
         zoom={8}
         center={center}
         options={options}
-        onClick={(e) =>{
+        onClick={(event) =>{
           setMarkers(current => [...current, {
             lat: e.latLng.lat(),
             lng: e.latLng.lng(),
@@ -51,12 +51,12 @@ function App() {
           }])
         }}
       >
-        {markers.map((marker) => (
+        {markers.map((marker) => 
           <Marker 
-            key={marker.time.toISOString()}
-            position={{ lat: marker.lat, lng: marker.lng}}
+          key={marker.time.toISOString()}
+          position={{ lat: marker.lat, lng: marker.lng}}
           />
-        ))}
+        )}
       </GoogleMap>
     </div>
   );
