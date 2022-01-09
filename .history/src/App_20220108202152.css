@@ -12,15 +12,14 @@ button {
   height: 100%;
   z-index: 10;
   margin:  0 auto;
-  padding: 15px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  max-width: 10px;
+  max-height: 10px;
 }
 .header-container {
   display: flex;
-  justify-content: space-around;
   border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 

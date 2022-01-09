@@ -7,12 +7,12 @@ import {
 } from "@react-google-maps/api";
 import "./App.css"
 import mapStyles from "./mapStyles";
-
+import {FullscreenControl} from 'react-map-gl';
 
 const libraries = ["places"];
 const mapContainerStyle = {
-  width: "100%",
-  height: "100%",
+  width: "100vw",
+  height: "100vh",
   position: "absolute",
   right: 1,
   top: 1

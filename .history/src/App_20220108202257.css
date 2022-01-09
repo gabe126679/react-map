@@ -13,14 +13,10 @@ button {
   z-index: 10;
   margin:  0 auto;
   padding: 15px;
+  
 }
 .header-container {
   display: flex;
-  justify-content: space-around;
   border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 

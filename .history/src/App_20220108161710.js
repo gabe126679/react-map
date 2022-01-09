@@ -5,17 +5,15 @@ import {
   Marker,
   // InfoWindow,
 } from "@react-google-maps/api";
-import "./App.css"
-import mapStyles from "./mapStyles";
 
+import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
 const mapContainerStyle = {
-  width: "100%",
-  height: "100%",
-  position: "absolute",
-  right: 1,
-  top: 1
+  width: "100vw",
+  height: "100vh",
+  right: 10,
+  top: 10
 };
 const options = {
   styles: mapStyles,
@@ -30,8 +28,7 @@ const center = {
 function App() {
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 
-    process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: "AIzaSyAKwghvePHmhCb62bCZ1ZzS3YgW6CFmzeo",
     libraries,
   });
   const [markers, setMarkers] = React.useState([]);
@@ -40,19 +37,12 @@ function App() {
   if (!isLoaded) return "Loading...";
 
   return (
-  <div>
-    <div className="header-container">
-      <button
-className="header-1 button"
-        >Shows
-      </button> 
+    <div>
       <button 
-      className="header-2 button">Artists
-      </button>
-      <button 
-        className="header-3 button">Venues
-      </button>
-    </div>
+        style={{
+          color: 'blue';
+          z-index: 10
+        }}>Primary</button>
         
       <GoogleMap
         mapContainerStyle={mapContainerStyle}

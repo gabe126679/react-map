@@ -16,11 +16,10 @@ button {
 }
 .header-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: align-items;
   border: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
 }
 

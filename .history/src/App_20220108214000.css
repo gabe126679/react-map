@@ -1,5 +1,6 @@
 .header-1 {
   background-color: #d1d1e9;
+  width: 100%;
 }
 .header-2 {
   background-color: #daa9cb;
@@ -13,14 +14,14 @@ button {
   z-index: 10;
   margin:  0 auto;
   padding: 15px;
+  
 }
 .header-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   border: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
 }
 

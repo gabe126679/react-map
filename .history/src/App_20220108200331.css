@@ -2,7 +2,7 @@
   background-color: #d1d1e9;
 }
 .header-2 {
-  background-color: #daa9cb;
+  background-color: #a9a9da;
 }
 .header-3 {
   background-color: #9191ee;
@@ -11,16 +11,10 @@ button {
   width: 100%;
   height: 100%;
   z-index: 10;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 15px;
 }
 .header-container {
   display: flex;
-  justify-content: space-around;
-  border: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 

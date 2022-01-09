@@ -1,0 +1,27 @@
+.header-1 {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 15px;
+}
+.header-2 {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 15px;
+}
+.header-3 {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 15px;
+}
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0px;
+}
+
